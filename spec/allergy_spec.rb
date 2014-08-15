@@ -1,12 +1,12 @@
-require ('rspec')
-require ('allergy')
+require 'rspec'
+require 'allergy'
 
-describe 'allergy' do
-	it('should return a score when you input your allergens')
-	expect allergy(1).to(eq["socks"])
-end
-it('lists and reports multiple allergens') do
-expect allerrgy(10).to(eq["finals","dryersheets"])
-end
-	
+describe ('allergies') do
+	it('should return a score when you input your allergens')do
+	expect(allergies(1)).to (eq(["socks"]))
+	end
+	it ('lists and reports multiple allergens') do
+	expect(allergies(3)).to (eq(["dryersheets","socks"]))
+	end
+
 end
